@@ -66,7 +66,7 @@ FullCalendarModule.registerPlugins([
     IonicSelectableModule,
     ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+    schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     
 
   providers: [
