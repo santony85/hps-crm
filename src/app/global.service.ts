@@ -130,7 +130,7 @@ export class GlobalService {
     return new Promise(resolve => {
       this.storage.get('user').then(user => {
         this.user=user;
-        var murl = 'http://176.31.154.73:91/listgrenelleapp/'+user._id+'/3'; 
+        var murl = 'https://hps-crm.fr/listgrenelleapp/'+user._id+'/3'; 
         ////console.log(murl)
         this.http.get(murl).subscribe(results => {
           let trdv ={
@@ -295,7 +295,7 @@ export class GlobalService {
   }
   public updateRdv(data,callback) {
     ////console.log(data)
-    var murl = "http://176.31.154.73:91/updaterdvapp";
+    var murl = "https://hps-crm.fr/updaterdvapp";
     this.http.post(murl, data).subscribe((results2) => {
       //console.log(results2);
       callback(results2);
@@ -307,7 +307,7 @@ export class GlobalService {
 
       if(data){
         console.log(JSON.stringify(data.data))
-        var murl = "http://176.31.154.73:91/updaterdvappall";
+        var murl = "https://hps-crm.fr/updaterdvappall";
         this.http.post(murl, data.data).subscribe((results2) => {
           //console.log(results2);
           callback(results2);
@@ -362,7 +362,7 @@ export class GlobalService {
   /*****************************/
   public  loadIssues() {
     //console.log("ici")
-    var murl = "http://176.31.154.73:91/list/issues";
+    var murl = "https://hps-crm.fr/list/issues";
     this.http.get(murl).subscribe((results) => {
 
       this.storage.set('issues', results);
@@ -371,7 +371,7 @@ export class GlobalService {
   /*****************************/
   /*****************************/
   public getLikeListCB(col,val,field,callback){
-    var murl = "http://176.31.154.73:91/likext/"+col+"/"+field+"/"+val;
+    var murl = "https://hps-crm.fr/likext/"+col+"/"+field+"/"+val;
     this.http.get(murl).subscribe(results => {
       //resolve(results);
       this.client=results;
@@ -383,7 +383,7 @@ export class GlobalService {
       return new Promise(resolve => {
         let lstret:any=[];
         this.storage.get('user').then(user => {
-          var murl = "http://176.31.154.73:91/likextrapport/"+field+"/"+val+"/"+user._id;
+          var murl = "https://hps-crm.fr/likextrapport/"+field+"/"+val+"/"+user._id;
           this.http.get(murl).subscribe(datas => {
             var results:any=[]
             results = datas;
@@ -412,7 +412,7 @@ export class GlobalService {
       return new Promise(resolve => {
         let lstret:any=[];
         this.storage.get('user').then(user => {
-          var murl = "http://176.31.154.73:91/finddaterapport/"+d1+"/"+d2+"/"+user._id;
+          var murl = "https://hps-crm.fr/finddaterapport/"+d1+"/"+d2+"/"+user._id;
           this.http.get(murl).subscribe(datas => {
             var results:any=[]
             results = datas;
@@ -441,7 +441,7 @@ export class GlobalService {
       return new Promise(resolve => {
         let lstret:any=[];
        
-          var murl = "http://176.31.154.73:91/finddaterapport/"+d1+"/"+d2+"/"+idc;
+          var murl = "https://hps-crm.fr/finddaterapport/"+d1+"/"+d2+"/"+idc;
           this.http.get(murl).subscribe(datas => {
             var results:any=[]
             results = datas;
@@ -468,7 +468,7 @@ export class GlobalService {
   /*****************************/
   public getClientListLocCB(lat,lng,dist,callback){
      
-      var murl = "http://176.31.154.73:91/clientloc/"+lat+"/"+lng+"/"+dist*1000;
+      var murl = "https://hps-crm.fr/clientloc/"+lat+"/"+lng+"/"+dist*1000;
       this.http.get(murl).subscribe(results => {
         this.client=results;
         return callback(results);
@@ -494,7 +494,7 @@ export class GlobalService {
   /** EXTERNE */
   public  loadFamille() {
     //console.log("ici")
-    var murl = "http://176.31.154.73:91/getfamille";
+    var murl = "https://hps-crm.fr/getfamille";
     this.http.get(murl).subscribe((results) => {
       this.storage.set('familles', results);
     });
@@ -507,7 +507,7 @@ export class GlobalService {
   }
   /*****************************/
   public loadProduit() {
-      var murl = "http://176.31.154.73:91/list/categories";
+      var murl = "https://hps-crm.fr/list/categories";
       this.http.get(murl).subscribe((results) => {
         this.storage.set('produits', results);
       })
@@ -533,7 +533,7 @@ export class GlobalService {
 
       //user._id="5cff676b69e4b6306e3c466f"   
 
-    var murl = "http://176.31.154.73:91/getequipe/"+user._id+"/iscdv";
+    var murl = "https://hps-crm.fr/getequipe/"+user._id+"/iscdv";
     this.http.get(murl).subscribe((results) => {
       return callback(results);
     });
