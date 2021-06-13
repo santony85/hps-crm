@@ -1,0 +1,60 @@
+ion-item{
+    /*margin: 1rem;*/
+    border: 1px solid white;
+    border-radius: 5px;
+    --background: #efefef;
+    font-size: 0.7rem;
+    color: black; 
+--padding-start: 5px;
+--inner-border-width: 0px 0px 0px 0px;
+}
+ion-content{
+    --background: linear-gradient(#ffffff3b, #ffffffd6);
+    background-color: #add8e6d1;
+    font-size: 0.8rem;
+}
+.largeitem{
+    height: 70px;
+    --background: white;
+}
+.headeritem{
+    --background: #efefef;
+    color: black; 
+}
+.qte{
+    width: 5.8rem;
+}
+.ref{
+    width: 9rem;
+    margin-top: 0.5rem;
+}
+.prix{
+    width: 9rem;
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+}
+.ddes{
+    width: 34rem;
+
+}
+.des{
+    font-weight: 600;
+    margin-top: 1.3rem;
+    color: darkslateblue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ion-select{
+border: 1px solid white;
+border-radius: 5px;
+background: #efefef;
+font-size: 0.7rem;
+color: black; 
+--padding-start: 5px;
+--inner-border-width: 0px 0px 0px 0px;
+min-height:44px;
+}
+.validation-errors{
+    color:red;
+}

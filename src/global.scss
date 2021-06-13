@@ -1,0 +1,95 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import "~@ansur/leaflet-pulse-icon/dist/L.Icon.Pulse.css";
+@import "~leaflet/dist/leaflet.css";
+
+ 
+
+
+
+////MARKERS POUR LA MAP
+.marker-cluster-small {
+    background-color: rgba(181, 226, 140, 0.6);
+
+  }
+
+  .marker-cluster-small div {
+    background-color: rgba(110, 204, 57, 0.6);
+
+  }
+
+  .marker-cluster-medium {
+    background-color: rgba(241, 211, 87, 0.6);
+
+  }
+
+  .marker-cluster-medium div {
+    background-color: rgba(240, 194, 12, 0.6);
+
+  }
+
+  .marker-cluster-large {
+    background-color: rgba(253, 156, 115, 0.6);
+
+  }
+
+  .marker-cluster-large div {
+    background-color: rgba(241, 128, 23, 0.6);
+
+  }
+
+  .marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+  }
+
+  .marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    text-align: center;
+    border-radius: 15px;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  }
+
+  .marker-cluster span {
+    line-height: 30px;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
